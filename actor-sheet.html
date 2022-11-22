@@ -7,16 +7,7 @@
             <h1 class="charname">
                 <input name="name" type="text" value="{{data.name}}" placeholder="Name" />
             </h1>
-            <div class="resource">
-                <input type="number" name="system.health.value" value="{{systemData.health.value}}"/>
-                <span> / </span>
-                <input type="number" name="system.health.max" value="{{systemData.health.max}}"/>
-            </div>
-            <div class="resource">
-                <input type="number" name="system.power.value" value="{{systemData.power.value}}"/>
-                <span> / </span>
-                <input type="number" name="system.power.max" value="{{systemData.power.max}}"/>
-            </div>
+            {{!-- I STOLE THE RESORCES HAHAHAHAHA, put them in the description page --}}
         </div>
     </header>
 
@@ -31,6 +22,16 @@
     <section class="sheet-body">
 
         {{!-- Biography Tab --}}
+        <div class="resource">
+            <input type="number" name="system.health.value" value="{{systemData.health.value}}"/>
+            <span> / </span>
+            <input type="number" name="system.health.max" value="{{systemData.health.max}}"/>
+        </div>
+        <div class="resource">
+            <input type="number" name="system.power.value" value="{{systemData.power.value}}"/>
+            <span> / </span>
+            <input type="number" name="system.power.max" value="{{systemData.power.max}}"/>
+        </div>
         <div class="tab description" data-group="primary" data-tab="description">
             {{editor biographyHTML target="system.biography" button=true editable=editable engine="prosemirror"}}
         </div>
