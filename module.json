@@ -1,0 +1,19 @@
+{
+	"name": "icon-145-sheet",
+	"title": "icon-145-sheet",
+	"description": "A simple module which adds a user specific to do list.",
+	"authors": [{
+		"name": "Exocist"
+	}],
+	"version": "1",
+	"minimumCoreVersion": "10.0.1",
+  	"esmodules": [
+   	 "scripts/init.js"
+  	],
+	"templates": [
+   	 "templates/icon-actor-sheet.html"
+  	],
+	"styles": [
+	"templates/itemsummary.css"
+	]
+}
